@@ -5,23 +5,23 @@
     <link rel="stylesheet" href="./build/css/styles.css" type="text/css">
     <script src="./build/js/vendor.min.js" type="text/javascript"></script>
     <script src="./build/js/app.js" type="text/javascript"></script>
-    <title>Doctor Lookup</title>
+    <title>Portland Doctor Lookup</title>
   </head>
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>Doctor Lookup</h1>
+        <h1>Portland Doctor Lookup</h1>
       </div>
       <div id="welcome">
         <p>
-          Welcome to Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area whocan help.
+          Welcome to Portland Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area whocan help.
         </p>
         <div id="begin" class="btn btn-info">Begin</div>
       </div>
       <div id="condition-form">
         <h3>Condition Form</h3>
-        <form>
-          <select id="condition" required>
+        <form id="condition">
+          <select id="condition-select" required>
             <!-- Conditions to be displayed here -->
           </select>
           <button type="submit" class="btn btn-info">Submit</button>
@@ -37,3 +37,20 @@
     </div>
   </body>
 </html>
+
+
+<!-- '<div class="doc-box">'+
+  '<div class="row">'+
+    '<div class="col-sm-4">'+
+      '<img class="doc-pic" src="'+doctor.profile.image_url+'" alt="profile-pic"/>'+
+    '</div>'+
+    '<div class="col-sm-8">'+
+      '<h4>'+doctor.profile.first_name+' '+doctor.profile.middle_name[0]+'. '+doctor.profile.last_name+' '<small>'+doctor.profile.title+'</small></h4>'+
+      '<p>Specialties <em>'+doctor.specialties[0].name+'</em></p>'+
+      '<br>'+
+      '<p>'+doctor.practices[0].name+'</p>'+
+      '<p>'+doctor.practices[0].street+'</p>'+
+      '<p>'+doctor.practices[0].state+', '+doctor.practices[0].zip+'</p>'+
+    '</div>'+
+  '</div>'+
+'</div>' -->
