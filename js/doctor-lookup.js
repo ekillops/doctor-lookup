@@ -12,7 +12,15 @@ function DoctorLookup(newCondition, newZip) {
 DoctorLookup.getConditions = function(displayFunction) {
   $.get("https://api.betterdoctor.com/2016-03-01/conditions?user_key=" + apiKey).then(function(response){
       displayFunction(response.data);
-    }).fail(function(error){
+  }).fail(function(error){
+    console.log(error.responseJSON.message);
+  });
+};
+
+DoctorLookup.getDoctor = function(uid, displayFunction) {
+  $.get("https://api.betterdoctor.com/2016-03-01/doctors/"+uid+"?user_key="+apiKey).then(function(response){
+    displayFunction(response.data);
+  }).fail(function(error){
     console.log(error.responseJSON.message);
   });
 };

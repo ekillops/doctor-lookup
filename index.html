@@ -25,7 +25,7 @@
             <!-- Conditions to be displayed here -->
           </select>
           <br>
-          <input id="condition-zip" type="text" pattern="[0-9]{5}" class="form-control" placeholder="5 digit zip code" required>
+          <input id="condition-zip" type="text" pattern="[0-9]{5}" class="form-control" placeholder="5 Digit Zip-Code" required>
           <br>
           <button type="submit" class="btn btn-info">Submit</button>
         </form>
@@ -37,24 +37,18 @@
         <!-- Doctors to be displayed here -->
         </div>
       </div>
-      <hr>
+      <div id="doctor">
+        <div class="row">
+          <div id="nav-row">
+            <span id="back-results" class="btn btn-sm btn-info">Back to Results</span>
+            <span id="search-again" class="btn btn-sm btn-info">Search Again</span>
+          </div>
+        </div>
+        <div class="gray-line"></div>
+        <div id="doctor-profile">
+        </div>
+      </div>
+      <div class="gray-line"></div>
     </div>
   </body>
 </html>
-
-
-<!-- '<div class="doc-box">'+
-  '<div class="row">'+
-    '<div class="col-sm-4">'+
-      '<img class="doc-pic" src="'+doctor.profile.image_url+'" alt="profile-pic"/>'+
-    '</div>'+
-    '<div class="col-sm-8">'+
-      '<h4>'+doctor.profile.first_name+' '+doctor.profile.middle_name[0]+'. '+doctor.profile.last_name+' '<small>'+doctor.profile.title+'</small></h4>'+
-      '<p>Specialties <em>'+doctor.specialties[0].name+'</em></p>'+
-      '<br>'+
-      '<p>'+doctor.practices[0].name+'</p>'+
-      '<p>'+doctor.practices[0].street+'</p>'+
-      '<p>'+doctor.practices[0].state+', '+doctor.practices[0].zip+'</p>'+
-    '</div>'+
-  '</div>'+
-'</div>' -->
