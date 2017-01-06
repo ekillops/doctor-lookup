@@ -14,21 +14,24 @@
       </div>
       <div id="welcome">
         <p>
-          Welcome to Portland Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area whocan help.
+          Welcome to Portland Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area who can help.
         </p>
         <div id="begin" class="btn btn-info">Begin</div>
       </div>
       <div id="condition-form">
         <h3>Condition Form</h3>
         <form id="condition">
-          <select id="condition-select" required>
+          <select id="condition-select" class="form-control" required>
             <!-- Conditions to be displayed here -->
           </select>
+          <br>
           <button type="submit" class="btn btn-info">Submit</button>
         </form>
       </div>
       <div id="results">
-        <div id="search-again" class="btn btn-info">Search Again</div>
+        <div id="search-again" class="btn btn-sm btn-info">Search Again</div>
+        <h3>Results:</h3>
+        <br>
         <div id="doctors">
         <!-- Doctors to be displayed here -->
         </div>
