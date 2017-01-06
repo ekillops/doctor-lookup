@@ -5,33 +5,34 @@
     <link rel="stylesheet" href="./build/css/styles.css" type="text/css">
     <script src="./build/js/vendor.min.js" type="text/javascript"></script>
     <script src="./build/js/app.js" type="text/javascript"></script>
-    <title>Portland Doctor Lookup</title>
+    <title>Doctor Lookup</title>
   </head>
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>Portland Doctor Lookup</h1>
+        <h1>Doctor Lookup</h1>
       </div>
       <div id="welcome">
         <p>
-          Welcome to Portland Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area who can help.
+          Welcome to Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area who can help.
         </p>
         <div id="begin" class="btn btn-info">Begin</div>
       </div>
       <div id="condition-form">
-        <h3>Condition Form</h3>
+        <h4>Condition</h4>
         <form id="condition">
           <select id="condition-select" class="form-control" required>
             <!-- Conditions to be displayed here -->
           </select>
+          <br>
+          <input id="condition-zip" type="text" pattern="[0-9]{5}" class="form-control" placeholder="5 digit zip code" required>
           <br>
           <button type="submit" class="btn btn-info">Submit</button>
         </form>
       </div>
       <div id="results">
         <div id="search-again" class="btn btn-sm btn-info">Search Again</div>
-        <h3>Results:</h3>
-        <br>
+        <p>Search results for doctors in your area who treat <span id="search-condition"></span>...</p>
         <div id="doctors">
         <!-- Doctors to be displayed here -->
         </div>

@@ -2,9 +2,24 @@
   display: none;
 }
 
+#search-again {
+  margin-bottom: 10px
+}
 .doc-box {
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #eee;
   border-radius: 4px;
+}
+
+.doc-pic {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.doc-info {
+  text-align: center;
+  margin-left: 14px;
+  margin-top: 20px;
 }
