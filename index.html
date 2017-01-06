@@ -12,16 +12,25 @@
       <div class="page-header">
         <h1>Doctor Lookup</h1>
       </div>
-      <p>
-        Welcome to Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area whocan help.
-      </p>
+      <div id="welcome">
+        <p>
+          Welcome to Doctor Lookup. Enter your medical condition below to receive a list of doctors in your area whocan help.
+        </p>
+        <div id="begin" class="btn btn-info">Begin</div>
+      </div>
       <hr>
-      <h3>Condition Form</h3>
-      <form>
-        <input id="condition" type="text" value="" placeholder="Enter your condition">
-        <button type="submit" class="btn btn-info">Submit</button>
-      </form>
+      <div id="condition-form">
+        <h3>Condition Form</h3>
+        <form>
+          <input id="condition" type="text" value="" placeholder="Enter your condition">
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
       <div id="results">
+        <div id="search-again" class="btn btn-info">Search Again</div>
+        <div id="doctors">
+
+        </div>
       </div>
     </div>
   </body>
