@@ -23,7 +23,7 @@ var lib = require ('bower-files')({
 });
 
 gulp.task('jshint', function() {
-  return gulp.src(['js/*.js'])
+  return gulp.src(['./js/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
@@ -70,6 +70,7 @@ gulp.task('build', ['clean'], function(){
   if (buildProduction) {
     gulp.start('minifyScripts');
   } else {
+    console.log("this is working");
     gulp.start('jsBrowserify');
   }
   gulp.start('bower');
