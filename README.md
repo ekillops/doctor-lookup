@@ -21,7 +21,7 @@ _Requires node.js_
 
 ## Known Bugs
 
-The search function relies on the BetterDoctor API's built in search which can return questionable results. "dry skin" returns dentists etc.
+None yet.
 
 ## Technologies Used
 

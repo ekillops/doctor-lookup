@@ -6,12 +6,12 @@ function fillConditionOtions(conditions) {
     var conditionOption = '<option value="'+condition.uid+'">'+condition.name+'</option>';
     $("#condition-select").append(conditionOption);
   }
-};
+}
 
 function viewProfile() {
   var docUid = $(this).attr('value');
   DoctorLookup.getDoctor(docUid, displayDoctor);
-};
+}
 
 
 function displayDoctors(doctors) {
@@ -48,10 +48,9 @@ function displayDoctors(doctors) {
   } else {
     $("#doctors").append('<p>No doctors match your search.</p>');
   }
-};
+}
 
 function displayDoctor(doctor) {
-  debugger
   //Doctor template
   var doctorHtml =  '<div class="row">'+
                     '<div class="col-sm-4">'+
@@ -82,7 +81,7 @@ function displayDoctor(doctor) {
   $("#doctor-profile").empty();
   $("#doctor-profile").html(doctorHtml);
   $("#doctor, #doctor-profile").show();
-};
+}
 
 $(document).ready(function() {
 
@@ -98,8 +97,8 @@ $(document).ready(function() {
     event.preventDefault();
     $("#condition-form").hide();
     var condition = $("#condition-select > option:selected").text().toLowerCase();
-    var zip = $("condition-zip").val();
-    var newDoctorLookup = new DoctorLookup(condition);
+    var zip = $("#condition-zip").val();
+    var newDoctorLookup = new DoctorLookup(condition, zip);
     newDoctorLookup.getDoctorsByCondition(displayDoctors);
     $("#search-condition").text(newDoctorLookup.condition);
     $("condition-zip").val("");
