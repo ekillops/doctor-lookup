@@ -18,6 +18,8 @@ _Requires node.js_
 2. From a command line run `>npm install` and `>bower install`
 3. Start local server by running `>gulp serve`
 
+If browser does not start automatically, visit `localhost:3000`
+
 
 ## Known Bugs
 
